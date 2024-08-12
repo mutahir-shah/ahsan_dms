@@ -1,0 +1,49 @@
+
+:root{
+   /* --color-primary: #EC4949; */
+
+}
+/*font Variables*/
+$bar: "Barlow Condensed", sans-serif;
+$lato: "Lato", sans-serif;
+
+/*Color Variables*/
+$yellow: var(--color-primary);
+$dark: #0a0a0a;
+
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,700|Lato");
+
+// Mixins
+@mixin transition(
+  $property: all,
+  $duration: 300ms,
+  $animate: linear,
+  $delay: 0s
+) {
+  transition: $property $duration $animate $delay;
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+.col-md-offset-right-1,
+.col-lg-offset-right-1 {
+  margin-right: 8.33333333%;
+}
+
+// Font family link

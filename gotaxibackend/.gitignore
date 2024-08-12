@@ -1,0 +1,56 @@
+# Ignore the .env file, which contains sensitive information
+.env
+
+# Ignore compiled code and vendor files
+/vendor
+/node_modules
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE and editor-specific files
+.idea
+.vscode
+
+# Ignore log files and temporary files
+storage/*.key
+storage/logs/*.log
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/testing/*
+storage/framework/views/*
+bootstrap/cache/*.php
+
+# Ignore Composer dependencies
+/vendor
+
+# Ignore npm/yarn dependencies
+/node_modules
+
+# Ignore Laravel Mix generated files
+/public/hot
+/public/storage
+/public/mix-manifest.json
+/public/css/*.css
+/public/js/*.js
+
+# Ignore Yarn integrity file
+.yarn-integrity
+
+# Ignore npm debug file
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Ignore environment specific files and directories
+Homestead.yaml
+Homestead.json
+.env.backup
+.env.production
+.env.staging
+.env.testing
+
+# Ignore other common build artifacts
+/.vagrant
+/.env.*

@@ -1,0 +1,1 @@
+mkdir storage/app && mkdir -p storage/framework/{sessions,views,cache} && php artisan key:generate && php artisan passport:install && php artisan storage:link && cd storage && chmod 600 oauth-private.key && chmod 600 oauth-public.key && cd .. && php artisan cache:clear && php artisan config:cache

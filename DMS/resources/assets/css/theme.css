@@ -1,0 +1,10 @@
+@import "../libs/jsvectormap/css/jsvectormap.min.css";
+@import "../libs/jsvectormap/swiper/swiper-bundle.min.css";
+@import "./bootstrap.min.css";
+@import "./icons.min.css";
+@import "./app.min.css";
+@import "./custom.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

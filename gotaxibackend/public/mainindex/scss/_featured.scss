@@ -1,0 +1,454 @@
+/*============= featured_area css =============*/
+.featured_area {
+  padding: 125px 0px 100px;
+
+  .section_title {
+    margin-bottom: 64px;
+  }
+}
+
+.featured_info {
+  .slick-slide {
+    padding-top: 12px;
+    padding-bottom: 65px;
+  }
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+  padding-bottom: 24px;
+}
+
+.slick-dots {
+  bottom: 0px;
+
+  li {
+    margin: 0px 2px;
+    width: 16px;
+    height: 16px;
+
+    button {
+      padding: 0px;
+      margin: 0px;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #c2cbde;
+      background: #c2cbde;
+      border-radius: 50%;
+      transform: scale(0.55);
+      transition: all 0.3s linear;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &.slick-active {
+      button {
+        transform: scale(1);
+        background: #fff;
+        border-color: $yellow;
+      }
+    }
+  }
+}
+
+.featured_item {
+  text-align: center;
+  padding: 30px 50px 50px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 14px 0px rgba(0, 11, 40, 0.06);
+  border-top: 4px solid transparent;
+  transition: all 0.2s linear;
+
+  .icon {
+    color: $yellow;
+    text-shadow: 1px 17px 24px rgba(255, 187, 3, 0.39);
+    line-height: 85px;
+
+    &:before {
+      font-size: 75px;
+
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 26px;
+    color: $dark;
+    margin-bottom: 22px;
+  }
+
+  p {
+    font: 400 17px/28px $lato;
+    color: #0A0A0A;
+    margin-bottom: 25px;
+  }
+
+  &:hover {
+    border-color: $yellow;
+    transform: translateY(-10px);
+    box-shadow: 0px 30px 40px 0px rgba(0, 11, 40, 0.08);
+  }
+}
+
+.learn_btn {
+  font: 600 18px/26px $bar;
+  display: inline-block;
+  color: $dark;
+  position: relative;
+  transition: color 0.4s linear;
+
+  &:before {
+    width: 0;
+    height: 1px;
+    right: 0;
+    content: "";
+    position: absolute;
+    background: $yellow;
+    bottom: 0;
+    transition: width 0.3s linear;
+  }
+
+  i {
+    vertical-align: middle;
+    font-size: 12px;
+    padding-left: 5px;
+  }
+
+  &:hover {
+    color: $yellow;
+
+    &:before {
+      right: auto;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+/*============= featured_area css =============*/
+
+/*============= city_location_area css =============*/
+.city_location_area {
+}
+
+.city_location_tab {
+  .location_inner_tab {
+    justify-content: center;
+    border: 0px;
+
+    .nav-item {
+      margin-bottom: 6px;
+
+      .nav-link {
+        font-size: 26px;
+        font-family: $bar;
+        line-height: 26px;
+        border: 0px;
+        border-radius: 0px;
+        background: #f8f9fc;
+        padding: 34px 75px;
+        color: $dark;
+        transition: background 0.3s linear, color 0.3s linear;
+
+        i {
+          line-height: 45px;
+          vertical-align: middle;
+          display: inline-block;
+          padding-right: 20px;
+          color: #0A0A0A;
+          transition: color 0.3s linear;
+
+          &:before {
+            font-size: 50px;
+          }
+        }
+
+        &.active, &:hover {
+          background: $yellow;
+          color: #fff;
+
+          i {
+            color: #fff;
+          }
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.booking_quality_tab {
+  justify-content: center;
+  padding: 20px 0px 20px;
+
+  .nav-item {
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    .nav-link {
+      border: 0px;
+      border-radius: 0px;
+      font-weight: 500;
+      font-family: $bar;
+      font-size: 18px;
+      line-height: 26px;
+      color: #0A0A0A;
+      padding: 0px;
+      position: relative;
+      transition: color 0.2s linear;
+
+      &:before {
+        content: "";
+        width: 0;
+        height: 1px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: $yellow;
+        transition: width 0.3s linear;
+      }
+
+      &.active, &:hover {
+        color: $yellow;
+
+        &:before {
+          left: 0;
+          right: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.boking_information {
+  padding-top: 25px;
+
+  .location-milage {
+    padding: 36px 0px;
+    border-bottom: 1px dotted #d9deeb;
+
+    .media-body {
+      h4 {
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        margin-bottom: 0px;
+      }
+    }
+
+    .mile {
+      font-size: 36px;
+      color: $yellow;
+      font-weight: 700;
+      font-family: $bar;
+
+      span {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+/*============= city_location_area css =============*/
+
+/*============= get_app_area css =============*/
+.get_app_area {
+  background: $yellow;
+}
+
+.get_app_content {
+  color: #fff;
+  padding-right: 110px;
+
+  .section_title {
+    margin-bottom: 28px;
+
+    h5, h2 {
+      color: #fff;
+    }
+
+    h2 {
+      font-size: 50px;
+      line-height: 55px;
+    }
+  }
+
+  p {
+    font-size: 17px;
+    margin-bottom: 42px;
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 70px;
+    padding-left: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+
+    li {
+      font-size: 20px;
+      line-height: 40px;
+      font-weight: 500;
+      font-family: $bar;
+      position: relative;
+      padding-left: 28px;
+      width: 50%;
+
+      &:before {
+        content: "\52";
+        position: absolute;
+        left: 0;
+        top: 2px;
+        font-family: eleganticons;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .slider_btn {
+    font-size: 24px;
+    border: 2px solid #fff;
+    transition: all 0.4s linear;
+
+    img {
+      vertical-align: bottom;
+      margin-right: 12px;
+    }
+
+    &.app_btn {
+      color: #fff;
+
+      img {
+        filter: brightness(1000);
+      }
+
+      &:hover {
+        background: #fff;
+        color: $dark;
+
+        img {
+          filter: brightness(0);
+        }
+      }
+    }
+
+    &.app_btn_two {
+      color: $dark;
+      margin-left: 20px;
+
+      &:before {
+        background: #fff;
+      }
+
+      img {
+        filter: brightness(0);
+      }
+
+      &:hover {
+        background: transparent;
+        color: #fff;
+
+        img {
+          filter: brightness(1000);
+        }
+      }
+    }
+  }
+}
+
+.app_image {
+  position: relative;
+
+  .shadow_bottom {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    border-radius: 50%/5px;
+    left: 10%;
+    bottom: 0px;
+    box-shadow: 0px 35px 33px 0 rgba(0, 0, 0, 0.8);
+    animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+  }
+
+  .image_two {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    img {
+      animation-name: jump;
+      animation-iteration-count: infinite;
+      animation-duration: 3.8s;
+      animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+    }
+
+    .shadow_bottom {
+      animation: shadow 3.8s infinite linear;
+      bottom: 10px;
+    }
+  }
+
+  .image_first {
+    position: absolute;
+    left: 60px;
+    top: 80px;
+
+    img {
+      animation-name: jump;
+      animation-iteration-count: infinite;
+      animation-duration: 2.8s;
+      animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+    }
+
+    .shadow_bottom {
+      animation: shadow 2.8s infinite linear;
+    }
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+    transition: transform 1.4s 0.6s linear;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0px 35px 33px 0 #000;
+  }
+  50% {
+    box-shadow: 0px 35px 35px -2px #000;
+    width: 60%;
+    left: 20%;
+  }
+  100% {
+    box-shadow: 0px 35px 33px 0 #000;
+  }
+}
+
+/*============= get_app_area css =============*/

@@ -1,0 +1,129 @@
+/*================ Start slider_area css ================*/
+.slider_area {
+  height: 850px;
+  position: relative;
+  z-index: 0;
+}
+
+.background_slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+
+  .slick-list {
+    height: 100%;
+
+    .slick-track {
+      height: 100%;
+
+      .bg_img {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+.ovarlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #00081a;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.slider_text {
+  color: #fff;
+  max-width: 770px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 80px;
+    line-height: 86px;
+    margin-bottom: 25px;
+    color: #fff;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 52px;
+  }
+}
+
+/*================ End slider_area css ================*/
+
+/*================ Start breadcrumb_area css ================*/
+.breadcrumb_area {
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-position: 50% !important;
+  position: relative;
+  padding: 142px 0px 152px;
+  z-index: 0;
+
+  .overlay_bg {
+    background: #00081a;
+    opacity: 0.70;
+  }
+}
+
+.breadcrumb_content {
+  h1 {
+    color: #fff;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+  background: transparent;
+  padding: 0px;
+  justify-content: center;
+  max-width: 450px;
+  margin: 0 auto;
+  border-radius: 0px;
+  padding-top: 5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.20);
+
+  .breadcrumb-item {
+    font-size: 20px;
+    font-family: $bar;
+    color: $yellow;
+
+    a {
+      color: #fff;
+
+      &:after {
+        content: "";
+        width: 1px;
+        height: 20px;
+        background: #fff;
+        display: inline-block;
+        margin: 0px 10px 4px 14px;
+        vertical-align: middle;
+      }
+    }
+
+    & + .breadcrumb-item {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+/*================ End breadcrumb_area css ================*/

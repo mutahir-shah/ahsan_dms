@@ -1,0 +1,603 @@
+@media (max-width: 1500px) {
+  .menu {
+    padding-left: 40px;
+  }
+
+  .menu > .nav-item:not(:last-child) {
+    margin-right: 26px;
+  }
+
+  .phone_btn {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header_area .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navbar {
+    width: calc(100% - 200px);
+  }
+
+  .menu_btn {
+    width: 200px;
+  }
+
+  .menu_btn .book_btn {
+    margin-left: 20px;
+    padding: 9px 25px;
+  }
+
+  .menu > .nav-item:not(:last-child) {
+    margin-right: 18px;
+  }
+
+  .menu {
+    padding-left: 20px;
+  }
+
+  .phone_btn a {
+    font-size: 24px;
+  }
+
+  .featured_item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .boking_content {
+    padding-left: 20px;
+    padding: 80px 20px 90px 20px;
+  }
+
+  .city_location_tab .location_inner_tab .nav-item .nav-link {
+    padding: 34px 45px;
+  }
+
+  .booking_slider .booking_form_info .tab_img {
+    padding-left: 40px;
+  }
+
+  .get_app_content {
+    padding-right: 0px;
+  }
+
+  .app_image .image_first img,
+  .app_image .image_two img {
+    width: 75%;
+    margin-top: 75px;
+  }
+
+  .app_image .image_first {
+    left: 0;
+  }
+
+  .action_img img {
+    max-width: 100%;
+  }
+
+  .action_content .call_btn {
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  .latest_news_slider .slick-slide {
+    padding: 25px 15px;
+  }
+
+  .latest_news_slider {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .latest_news_item .media-body {
+    padding: 0px 15px;
+  }
+
+  .contact_info {
+    padding-left: 40px;
+    max-width: 100%;
+    padding-right: 40px;
+  }
+
+  .f_widget.link_widget {
+    padding-left: 40px;
+  }
+
+  .f_widget.about_widget p {
+    font-size: 13px;
+  }
+
+  .team_item .team_img img,
+  .blog_single_inner .blog_item .single_post_img .item img {
+    max-width: 100%;
+  }
+
+  .main_blog_inner {
+    padding-right: 0;
+  }
+
+  .blog_sidebar {
+    padding-left: 20px;
+  }
+
+  .get_info {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu_btn {
+    display: none;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar:before {
+    display: none;
+  }
+
+  .header_area {
+    background: #fff;
+  }
+
+  .header_area .logo {
+    margin: -4px 0px;
+  }
+
+  .header_area + section,
+  .header_area + div {
+    margin-top: 70px;
+  }
+
+  .header_transparent + section,
+  .header_transparent + div {
+    margin-top: 0;
+  }
+
+  .header_transparent {
+    background: transparent;
+  }
+
+  .header_transparent .menu_toggle .hamburger span,
+  .header_transparent .menu_toggle .hamburger-cross span {
+    background: #fff;
+  }
+
+  .menu {
+    padding-left: 0px;
+  }
+
+  .menu > .nav-item:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .menu > .nav-item {
+    padding: 10px 15px;
+  }
+
+  .menu > .nav-item > .nav-link {
+    display: inline-block;
+  }
+
+  .navbar-collapse {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+
+  .menu > .nav-item.submenu ul {
+    box-shadow: none;
+    -webkit-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+    -moz-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+    -ms-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0s;
+    -o-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+    transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0px 25px;
+    margin: 0px;
+  }
+
+  .menu > .nav-item.submenu ul.show {
+    -webkit-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+    -moz-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+    -ms-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+    -o-transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+    transition: max-height 0.5s, opacity 0.2s 0.1s, visibility 0s 0s;
+    max-height: 250px;
+    overflow-y: scroll;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu > .nav-item.submenu ul .nav-item .nav-link {
+    padding: 0px;
+  }
+
+  .phone_btn {
+    padding: 15px 0px;
+  }
+
+  .header_transparent .navbar-collapse {
+    background: rgba(2, 14, 39, 0.7);
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0px 15px;
+  }
+
+  .header_transparent.navbar_fixed .menu_toggle .hamburger span,
+  .header_transparent.navbar_fixed .menu_toggle .hamburger-cross span {
+    background: #0a0a0a;
+  }
+
+  .header_transparent.navbar_fixed .navbar-collapse {
+    background: transparent;
+  }
+
+  .city_location_tab .location_inner_tab .nav-item .nav-link {
+    padding: 20px 27px;
+  }
+
+  .booking_slider .booking_form_info {
+    display: block;
+  }
+
+  .booking_form .form-group.choose_item {
+    padding-top: 0;
+  }
+
+  .booking_slider .booking_form_info .tab_img {
+    padding: 120px 15px 120px 65px;
+    height: 400px;
+  }
+
+  .booking_slider .slick-arrow.left {
+    right: 65px;
+  }
+
+  .booking_slider .slick-arrow.right {
+    right: 20px;
+  }
+
+  .booking_slider .slick-arrow {
+    top: auto;
+    bottom: 45px;
+  }
+
+  .boking_content {
+    padding-top: 42px;
+  }
+
+  .testimonial_slider {
+    padding: 0px 60px;
+  }
+
+  .action_content {
+    padding-top: 60px;
+  }
+
+  .app_image .image_two {
+    position: relative;
+    top: 100px;
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .app_image .image_two img {
+    width: 100%;
+  }
+
+  .app_image {
+    text-align: center;
+  }
+
+  .slider_text {
+    margin-top: -60px;
+  }
+
+  .slider_text h1 br {
+    display: none;
+  }
+
+  .latest_news_slider .slick-slide {
+    padding: 25px;
+  }
+
+  .latest_news_slider {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+
+  .latest_news_item .media-body {
+    padding: 0px 25px;
+  }
+
+  .map_area {
+    margin-top: 35px;
+    height: 520px;
+  }
+
+  .f_widget.link_widget {
+    padding-left: 0;
+  }
+
+  .f_widget {
+    margin-bottom: 35px;
+  }
+
+  .footer_area .row {
+    margin-bottom: -40px;
+  }
+
+  .team_item .social_icon a {
+    margin: 0px 2px;
+  }
+
+  .blog_sidebar:before {
+    display: none;
+  }
+
+  .blog_sidebar {
+    margin-top: 60px;
+    padding: 0px;
+  }
+
+  .widget.instagram_widget ul {
+    margin: -4px;
+    overflow: hidden;
+    max-width: 295px;
+  }
+
+  .achivment_info {
+    margin-top: 50px;
+  }
+
+  .contact_info_two {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking_quality_tab .nav-item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .blog_single_inner .posts_social {
+    display: block;
+  }
+
+  .blog_single_inner .posts_social .float-left,
+  .blog_single_inner .posts_social .float-right {
+    float: none !important;
+  }
+
+  .blog_single_inner .posts_social .float-right {
+    padding-top: 12px;
+  }
+
+  .sec_pad {
+    padding: 80px 0px;
+  }
+
+  .call_action_area {
+    padding-bottom: 80px;
+  }
+
+  .service_adventage_area {
+    padding-top: 80px;
+  }
+
+  .pt_200 {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .booking_slider .booking_form_info .tab_img img {
+    max-width: 100%;
+  }
+
+  .booking_slider .booking_form_info .tab_img .b_overlay_bg {
+    right: 20px;
+    width: auto;
+  }
+
+  .booking_slider .booking_form_info .tab_img {
+    padding: 120px 15px 120px 25px;
+  }
+
+  .booking_form .form-group.choose_item label:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .latest_news_item {
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    box-shadow: 11.856px 1.321px 38px 8px rgba(0, 11, 40, 0.08);
+  }
+
+  .latest_news_item img {
+    display: inline-block;
+  }
+
+  .latest_news_slider {
+    margin: 0px -15px;
+  }
+
+  .latest_news_slider .slick-slide {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .latest_news_slider .slick-slide {
+    margin: 0px;
+  }
+
+  .latest_news_item .media-body {
+    padding: 40px 25px;
+  }
+
+  .latest_news_item .media-body h3 {
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+
+  .f_widget.link_widget ul {
+    padding-top: 15px;
+  }
+
+  .get_app_content .slider_btn.app_btn_two {
+    margin-left: 0;
+  }
+
+  .slider_text h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .slider_area {
+    height: 680px;
+  }
+
+  .contact_info {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .blog_item .post_info li a {
+    font-size: 14px;
+  }
+
+  .blog_item .post_info li:after {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .post_author {
+    padding: 40px 15px;
+  }
+
+  .comment_box .post_comment .reply_comment {
+    padding-left: 15px;
+  }
+
+  .advantage_item {
+    padding-right: 0;
+  }
+
+  .service_adventage_area .row {
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .boking_information .location-milage {
+    display: block;
+  }
+
+  .boking_information .location-milage .media-body {
+    margin-bottom: 15px;
+  }
+
+  .car_img .car_two {
+    display: none;
+  }
+
+  .car_img .car_one {
+    position: relative;
+    top: 30px;
+    max-width: 100%;
+  }
+
+  .car_img {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .call_action_area {
+    padding-top: 120px;
+  }
+
+  .testimonial_slider {
+    padding: 0px;
+  }
+
+  .testimonial_slider .left,
+  .testimonial_slider .right {
+    display: none !important;
+  }
+
+  .get_app_content ul li {
+    display: block;
+    width: 100%;
+  }
+
+  .city_location_tab .location_inner_tab {
+    display: block;
+    text-align: center;
+  }
+
+  .city_location_tab .location_inner_tab .nav-item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .team_item .team_img img {
+    width: 100%;
+  }
+
+  .comment_box .post_comment .media-left {
+    padding-right: 0px;
+  }
+
+  .post_author .media-body h5 {
+    font-size: 18px;
+  }
+
+  .post_author {
+    display: block;
+  }
+
+  .post_author .media-body {
+    padding-right: 0;
+    margin-top: 20px;
+  }
+
+  .blog_single_inner .blog_item blockquote {
+    padding: 35px 20px;
+  }
+
+  .blog_single_inner .blog_item blockquote p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .blog_single_inner .post_tag {
+    display: block !important;
+  }
+
+  .blog_single_inner .post_tag a {
+    margin: 0px 0px 5px;
+  }
+
+  .action_content .call_btn {
+    font-size: 51px;
+    line-height: 62px;
+    margin-bottom: 18px;
+  }
+
+  .pt_200 {
+    padding-top: 80px;
+  }
+}
