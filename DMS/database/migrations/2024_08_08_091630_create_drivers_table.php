@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('driver_id', 255)->nullable();
             $table->string('iqaama_number', 255)->nullable();
             $table->date('iqaama_expiry')->nullable();
-            $table->date('date_of_birth')->nullable();
+            $table->date('dob')->nullable();
             $table->string('absher_number', 255)->nullable();
             $table->string('sponsorship', 255)->nullable();
             $table->string('sponsorship_id', 255)->nullable();
@@ -38,7 +38,6 @@ return new class extends Migration
             $table->text('remarks')->nullable();
             $table->string('email')->nullable();
             $table->string('mobile')->nullable();
-            $table->string('password');
             $table->softDeletes();
             $table->timestamps();
         });

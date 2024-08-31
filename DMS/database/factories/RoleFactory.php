@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class RoleFactory extends Factory
 {
-    protected static ?string $name = 'Administrator';
+    protected static string $name = 'Administrator';
     /**
      * Define the model's default state.
      *
@@ -18,7 +18,7 @@ class RoleFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => static::$name ??= fake()->name()
+            'name' => static::$name
         ];
     }
 }

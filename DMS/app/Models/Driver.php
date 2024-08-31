@@ -10,5 +10,5 @@ class Driver extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $guarded = ['id', '_token', '_method'];
+    protected $guarded = ['id'];
 }

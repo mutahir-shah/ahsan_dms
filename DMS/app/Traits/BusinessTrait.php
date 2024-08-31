@@ -3,7 +3,8 @@
 namespace App\Traits;
 
 use App\Models\Business;
-use DB;
+use Illuminate\Support\Facades\DB;
+
 trait BusinessTrait
 {
     public function storeBusiness()
@@ -19,6 +20,7 @@ trait BusinessTrait
             DB::rollBack();
         }
     }
+
     private function  getBusinesses()
     {
         return [

@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\{Branch, Department, Designation, EmploymentType, Role};
+use App\Models\{Branch, Country, Department, Designation, EmploymentType, Language, Role};
 use App\Enums\{Salutation, Gender, MaritalStatus};
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -20,6 +20,8 @@ return new class extends Migration
             $table->foreignIdFor(Role::class)->constrained();
             $table->foreignIdFor(EmploymentType::class)->constrained();
             $table->foreignIdFor(Branch::class)->constrained();
+            $table->foreignIdFor(Country::class)->constrained();
+            $table->foreignIdFor(Language::class)->constrained();
             $table->string('user_id')->nullable();
             $table->enum('salutation', array_column(Salutation::cases(), 'value'))->nullable();
             $table->string('name')->nullable();
@@ -27,18 +29,17 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->text('image')->nullable();
             $table->string('password')->nullable();
-            $table->string('country')->nullable();
             $table->string('mobile')->nullable();
             $table->enum('gender', array_column(Gender::cases(), 'value'))->default(Gender::Male);
+            $table->date('dob')->nullable();
             $table->date('joining_date')->nullable();
             $table->unsignedBigInteger('reporting_to')->nullable();
             $table->foreign('reporting_to')->references('id')->on('users')->nullOnDelete();
-            $table->string('languages')->nullable();
             $table->longText('address')->nullable();
             $table->longText('about')->nullable();
             $table->boolean('is_login_allowed')->default(true);
             $table->boolean('is_receive_email_notification')->default(true);
-            $table->decimal('hourly_rate', 8,2)->default(0);
+            $table->decimal('hourly_rate', 8,2)->nullable()->default(0);
             $table->string('slack_memember_id')->nullable();
             $table->string('skills')->nullable();
             $table->date('probation_end_date')->nullable();

@@ -2,14 +2,22 @@
 
 namespace App\Livewire\Auth;
 
-use Illuminate\Support\Facades\Auth;
+use App\Services\AuthService;
+use App\Traits\Auth\LoginValidationTrait;
 use Livewire\Component;
 use Livewire\Attributes\Layout;
 
 #[Layout('components.layouts.auth')]
 class Login extends Component
 {
+    use LoginValidationTrait;
+
     public $email, $password, $remember;
+
+    protected function getAuthService()
+    {
+        return app(AuthService::class);
+    }
 
     public function render()
     {
@@ -17,18 +25,11 @@ class Login extends Component
     }
 
     public function login(){
-        $validate = $this->validate([
-            'email' => 'required|email',
-            'password' => 'required'
-        ]);
+        $validated = $this->validated();
 
-        if(Auth::attempt($validate, $this->remember)){
-            session()->regenerate();
-            session()->flash('success', translate('Logged in successfully!'));
-            return redirect()->route('dashboard');
+        if($this->getAuthService()->login($validated)){
+            return $this->redirectRoute('dashboard', navigate:true);
         }
-
         $this->addError('email', translate('Invalid Email or Password'));
-
     }
 }

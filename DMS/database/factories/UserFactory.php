@@ -3,7 +3,7 @@
 namespace Database\Factories;
 
 use App\Enums\{Gender, Salutation};
-use App\Models\{Branch, Department, Designation, EmploymentType, Role};
+use App\Models\{Branch, Country, Department, Designation, EmploymentType, Language, Role};
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 
@@ -34,11 +34,13 @@ class UserFactory extends Factory
             'role_id' => Role::factory()->create()->id,
             'employment_type_id' => EmploymentType::find(1)->id,
             'branch_id' => Branch::find(1)->id,
+            'country_id' => Country::find(1)->id,
+            'language_id' => Language::find(1)->id,
             'user_id' => fake()->uuid(),
             'salutation' => static::$salutation,
             'gender' => static::$gender,
-            'name' => static::$name,
-            'email' => static::$email,
+            'name' => static::$name ??= fake()->name(),
+            'email' => static::$email ??= fake()->email(),
             'password' => Hash::make(static::$password),
         ];
     }
